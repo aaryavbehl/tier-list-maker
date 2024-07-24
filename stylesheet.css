@@ -54,6 +54,13 @@ body{
     background-color: white;
 }
 
+#bank {
+  width: 80vw;
+  height: 300px;
+  background-color: rgb(43, 43, 43);
+  margin-bottom: 20px;
+}
+
 .sparkle-button {
     --active: 0;
     --bg: radial-gradient(
