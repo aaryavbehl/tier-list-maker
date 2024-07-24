@@ -7,6 +7,15 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: cyan;
+}
+
+.headerContainer{
+    display: flex;
+}
+
+#addCard {
+
 }
 
 #board {
@@ -44,3 +53,4 @@ body{
     width: 100px;
     background-color: white;
 }
+
