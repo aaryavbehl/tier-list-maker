@@ -5,6 +5,12 @@
         <link rel="stylesheet" type="text/css" href="./stylesheet.css"/>
     </head>
     <body>
+      <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="./assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
         <span class="headerContainer">
         <div class="sp">
             <button id="addCard" class="sparkle-button">
@@ -73,12 +79,10 @@
             </span>
           </div>
         </span>
-        <h4>Tier list by Aaryav Behl</h4>
+        <h2 style="color: white; font-weight: bolder;">Tier list by Aaryav Behl</h2>
         <div id="board">
             <div class="row">
                 <div class="label">S</div>
-                <div class="card" id="first" draggable="true">1</div>
-                <div class="card" id="second" draggable="true">2</div>
             </div><div class="row">
                 <div class="label">A</div>
             </div><div class="row">
@@ -91,7 +95,7 @@
                 <div class="label">F</div>
             </div>
         </div>
-        <h2>CARD BANK</h2>
+        <h3 style="color: white; font-weight: 400;">CARD BANK</h3>
         <div id="bank">
 
         </div>
@@ -99,4 +103,5 @@
     <script src="./cards.js"></script>
     <script src="./rows.js"></script>
     <script src="./bank.js"></script>
+    <script src="./index.js"></script>
 </html>

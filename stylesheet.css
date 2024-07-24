@@ -8,14 +8,40 @@ body{
     justify-content: center;
     align-items: center;
     background-color: cyan;
+
+}
+
+
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
 
 .headerContainer{
     display: flex;
-}
-
-#addCard {
-
 }
 
 #board {
@@ -32,7 +58,7 @@ body{
 .row {
     display: flex;
     width: 100%;
-    height: 13%;
+    height: 85px;
     background: rgb(56, 56, 56);
 }
 
@@ -49,12 +75,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 85px;
     width: 100px;
     background-color: white;
 }
 
 #bank {
+  display: flex;
+  flex-wrap: wrap;
   width: 80vw;
   height: 300px;
   background-color: rgb(43, 43, 43);
