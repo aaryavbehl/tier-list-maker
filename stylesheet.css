@@ -54,3 +54,24 @@ body{
     background-color: white;
 }
 
+
+
+@keyframes float-out {
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  .text {
+    translate: 2% -6%;
+    letter-spacing: 0.01ch;
+    background: linear-gradient(90deg, hsl(0 0% calc((var(--active) * 100%) + 65%)), hsl(0 0% calc((var(--active) * 100%) + 26%)));
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: background var(--transition);
+  }
+  
+  .sparkle-button svg {
+    inline-size: 1.25em;
+    translate: -25% -5%;
+  }
